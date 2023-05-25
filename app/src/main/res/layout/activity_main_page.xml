@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B6DFB7"
+    tools:context=".MainPage">
+
+    <ImageButton
+        android:id="@+id/bttn_worldmap"
+        android:layout_width="wrap_content"
+        android:background="#B6DFB7"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bttn_library"
+        app:srcCompat="@drawable/bttn_worldmap"
+        tools:layout_editor_absoluteY="48dp" />
+
+    <ImageButton
+        android:id="@+id/bttn_library"
+        android:layout_width="325dp"
+        android:layout_height="81dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bttn_worldmap"
+        app:layout_constraintBottom_toTopOf="@+id/bttn_menu"
+        app:srcCompat="@drawable/bttn_library"
+        tools:layout_editor_absoluteY="325dp" />
+
+    <ImageButton
+        android:id="@+id/bttn_menu"
+        android:layout_width="325dp"
+        android:layout_height="81dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bttn_settings"
+        app:layout_constraintTop_toBottomOf="@+id/bttn_library"
+        app:srcCompat="@drawable/bttn_menu"
+        tools:layout_editor_absoluteY="423dp" />
+
+    <ImageButton
+        android:id="@+id/bttn_settings"
+        android:layout_width="325dp"
+        android:layout_height="81dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bttn_signout"
+        app:layout_constraintTop_toBottomOf="@+id/bttn_menu"
+        app:srcCompat="@drawable/bttn_settings"
+        tools:layout_editor_absoluteY="529dp" />
+
+    <ImageButton
+        android:id="@+id/bttn_signout"
+        android:layout_width="325dp"
+        android:layout_height="81dp"
+        android:background="#B6DFB7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bttn_settings"
+        app:srcCompat="@drawable/bttn_signout"
+        tools:layout_editor_absoluteY="646dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B6DFB7"
+    tools:context=".MenuSecondActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="369dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/shape_text"
+        android:fontFamily="@font/abrilFatface_Regular"
+        android:gravity="center"
+        android:text="Картотека городов"
+        android:textColor="#414BB2"
+        android:textSize="54dp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- android:background="@drawable/shape_text" -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_city"
+        android:layout_width="368dp"
+        android:layout_height="579dp"
+        android:layout_marginTop="25dp"
+        android:textColor="#414BB2"
+        android:textSize="26dp"
+        android:fontFamily="@font/abrilFatface_Regular"
+        android:background="@drawable/shape_text"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

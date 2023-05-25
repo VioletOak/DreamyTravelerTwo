@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B6DFB7"
+    tools:context=".LibraryActivity">
+
+    <ImageView
+        android:id="@+id/white_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/bttn_favorite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/white_two" />
+
+    <ImageButton
+        android:id="@+id/bttn_favorite"
+        android:layout_width="325dp"
+        android:layout_height="81dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/white_two"
+        app:layout_constraintBottom_toTopOf="@+id/bttn_plans"
+        app:srcCompat="@drawable/bttn_favorite"
+        tools:layout_editor_absoluteY="283dp" />
+
+    <ImageButton
+        android:id="@+id/bttn_plans"
+        android:layout_width="325dp"
+        android:layout_height="81dp"
+        app:srcCompat="@drawable/bttn_plans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bttn_favorite"
+        app:layout_constraintBottom_toTopOf="@+id/bttn_pt"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="396dp" />
+
+    <ImageButton
+        android:id="@+id/bttn_pt"
+        android:layout_width="325dp"
+        android:layout_height="81dp"
+        app:srcCompat="@drawable/bttn_pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bttn_plans"
+        app:layout_constraintBottom_toTopOf="@+id/bttn_visited"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="505dp" />
+
+    <ImageButton
+        android:id="@+id/bttn_visited"
+        android:layout_width="325dp"
+        android:layout_height="81dp"
+        app:srcCompat="@drawable/bttn_visited"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="bttn_pt"
+        app:layout_constraintBottom_toBottonOf="parent"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="615dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
