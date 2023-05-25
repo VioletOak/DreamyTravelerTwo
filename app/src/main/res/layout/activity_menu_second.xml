@@ -7,12 +7,13 @@
     android:background="#B6DFB7"
     tools:context=".MenuSecondActivity">
 
+    <!-- android:fontFamily="@font/abrilFatface_Regular" -->
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="369dp"
         android:layout_height="75dp"
         android:layout_marginTop="23dp"
-        android:fontFamily="@font/abrilFatface_Regular"
         android:gravity="center"
         android:text="Картотека городов"
         android:textColor="#414BB2"
@@ -31,7 +32,6 @@
         android:layout_marginTop="25dp"
         android:textColor="#414BB2"
         android:textSize="26dp"
-        android:fontFamily="@font/abrilFatface_Regular"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

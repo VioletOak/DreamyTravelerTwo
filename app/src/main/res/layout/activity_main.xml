@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#B6DFB7"
     android:layout_height="match_parent"
+    android:background="#B6DFB7"
     tools:context=".MainActivity">
 
     <ImageView
@@ -19,6 +19,8 @@
         app:layout_constraintVertical_bias="0.273"
         app:srcCompat="@drawable/white_two" />
 
+    <!-- android:fontFamily="@font/abrilFatface_Regular" -->
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -26,7 +28,6 @@
         android:text="WELCOME"
         android:textColor="#414BB2"
         android:textSize="54dp"
-        android:fontFamily="@font/abrilFatface_Regular"
         app:layout_constraintBottom_toTopOf="@+id/imageButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
